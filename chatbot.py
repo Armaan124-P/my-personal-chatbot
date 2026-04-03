@@ -2,7 +2,7 @@ import streamlit as st
 
 def query (user_query): 
 
-    api_key="AIzaSyA7jD7LpF13hQ2MbLCHXglWboqsvbYU8RQ"
+    api_key = st.secrets["GEMINI_API_KEY"] 
 
     from google import  genai
 
