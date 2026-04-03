@@ -9,7 +9,7 @@ def query (user_query):
     my_ai = genai.Client(api_key = api_key)
 
     responce = my_ai.models.generate_content(
-        model = "gemini-2.0-flash",
+        model = "gemini-1.5-flash-8b",
         contents = user_query
     )
 
